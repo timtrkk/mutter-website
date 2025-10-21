@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mutter — Künstlerin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      Iris Rieck
+      <p id="site-tagline">Künstlerin — Malerei, Skulptur, Fotografie</p>
+      <nav>
+        <a href="#about">Über</a>
+        <a href="#works">Werke</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- INTRO (leicht editierbar) -->
+    <section id="about" class="card">
+      <h2>Über</h2>
+      <p id="about-text">
+ Willkommen in der malerischen Welt von mir wo Farbe, Licht und Gefühle zu Bildern werden.  
+      <button id="edit-about-hint" class="hint">Wie ändere ich diesen Text? → weiter unten lesen</button>
+    </section>
+
+    <!-- GALERIE (Bilder platzieren) -->
+    <section id="works" class="card">
+      <h2>Ausgewählte Werke</h2>
+      <p>Klicke ein Bild an, um es größer zu sehen.</p>
+      <div id="gallery" class="gallery">
+        <!-- Platzhalter-Bilder: ersetze files/images/placeholderX.jpg -->
+        <figure class="thumb">
+          <img src="images/meinbild1.jpg" alt="Werk 1" data-title="Bild 1">
+          <figcaption>Werk 1 — Bild 1</figcaption>
+        </figure>
+        <figure class="thumb">
+          <img src="images/placeholder2.jpg" alt="Werk 2" data-title="Werk 2 — Mixed Media">
+          <figcaption>Werk 2 — Mixed Media</figcaption>
+        </figure>
+        <figure class="thumb">
+          <img src="images/placeholder3.jpg" alt="Werk 3" data-title="Werk 3 — Skulptur">
+          <figcaption>Werk 3 — Skulptur</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="contact" class="card">
+      <h2>Kontakt</h2>
+      <p>Wenn du Interesse hast, schreibe an: <a id="email-link" href="mailto:rieck-iris@t-online.e</a></p>
+    </section>
+  </main>
+
+  <!-- BILD-MODAL -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <button id="modal-close" class="modal-close" aria-label="Schließen">✕</button>
+    <img id="modal-img" src="" alt="">
+    <p id="modal-caption"></p>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> [Name deiner Mutter] — Alle Rechte vorbehalten</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
